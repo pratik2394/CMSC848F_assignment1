@@ -1,0 +1,121 @@
+Name: Pratik Patel
+U-ID: 118397054, pratik94
+
+This is the report for assignment-1 for CMSC848F. 
+
+
+0.1 Rendering your first mesh (5 points)
+
+![Rendering the first mesh](images/cow_render.jpg)
+
+1. Practicing with Cameras
+
+1.1. 360-degree Renders (5 points)
+
+<figure style="text-align: center;">
+    <img src="output/1_1_rotating_cow.gif" alt="360 degree render of the cow mesh" />
+    <figcaption>360 degree render of the cow mesh</figcaption>
+</figure>
+
+1.2 Re-creating the Dolly Zoom (15 points)
+
+
+<figure style="text-align: center;">
+    <img src="output/dolly.gif" alt="Dolly Zoom" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+
+
+2. Practicing with Meshes
+
+2.1 Constructing a Tetrahedron (5 points)
+
+<figure style="text-align: center;">
+    <img src="output/tetrahedron_mesh.gif" alt="Tetrahedron Mesh" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+Tetrahedron is supposed to have 4 vertices and 4 faces. In my case apex is at the origin and other three are on x, y, z axis respectively.
+
+
+2.2 Constructing a Cube (5 points)
+
+
+<figure style="text-align: center;">
+    <img src="output/cube_mesh.gif" alt="Cube Mesh" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+Cube is supposed to have 8 vertices and 6 faces. when using triangles as mesh, faces will double. i.e. 12 triangles.
+
+
+3. Re-texturing a mesh (15 points)
+
+
+<figure style="text-align: center;">
+    <img src="output/cow_retextured360.gif" alt="Re-texturing a mesh" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+I am using same color1 and color2 that you have used in the assignment. 
+color1 = [0, 0, 1] and color2 = [1, 0, 0].
+
+4. Camera Transformations (15 points)
+
+4.1. R_relative= [[0, -1, 0], [1, 0, 0], [0, 0, 1]], T_relative = [0.0, 0.0, 0.0]
+
+<figure style="text-align: center;">
+    <img src="output/cow_transform_1.jpg" alt="Camera transform 1" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+4.2. R_relative=[[0, 0, -1], [0, 1, 0], [1, 0, 0]], T_relative = [3.0, 0.0, 3.0]
+
+<figure style="text-align: center;">
+    <img src="output/cow_transform_2.jpg" alt="Camera transform 2" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+
+4.3. R_relative = [[1, 0, 0], [0, 1, 0], [0, 0, 1]], T_relative = [0.0, 0.0, 10.0]
+
+<figure style="text-align: center;">
+    <img src="output/cow_transform_3.jpg" alt="Camera transform 3" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+4.4. R_relative = [[1, 0, 0], [0, 1, 0], [0, 0, 1]], T_relative = [0.5, 0.0, 0.0]
+
+<figure style="text-align: center;">
+    <img src="output/cow_transform_4.jpg" alt="Camera transform 4" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+
+5. Rendering Generic 3D Representations
+
+5.1 Rendering Point Clouds from RGB-D Images (15 points)
+<figure style="text-align: center;">
+    <img src="output/point_cloud1.gif" alt="Point cloud from image 2" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+5.2 Parametric Functions (10 points)
+<figure style="text-align: center;">
+    <img src="output/point_cloud2.gif" alt="Point cloud from image 2" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+5.3 Implicit Surfaces (10 points)
+<figure style="text-align: center;">
+    <img src="output/point_cloud_combined.gif" alt="Combined point cloud from both images" />
+    <figcaption>Dolly Zoom effect on the cow mesh</figcaption>
+</figure>
+
+comparision: The quality using implicit formulation is better than parametric formulation. The reason is that implicit formulation is able to capture the surface better than parametric formulation.
+Although parametric formulation is more intuitive, implicit formulation is earlier to learn using neural network.
+
+
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
